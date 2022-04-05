@@ -65,14 +65,17 @@ RUNTEQ生全員チャンネルフォローしていると有益情報が手に�
 <br>
 
 ## 🔹画面遷移図🔹
-
+https://www.figma.com/file/Hj89LLvgds4EFfxCX0vFh1/maji-info?node-id=0%3A1
 
 <br>
 
 ## 🔹テーブル設計・ER図🔹
-
-
+https://drive.google.com/file/d/1DuTKVJtGrHR0C29BCe1anMwWSt2IyTY4/view?usp=sharing
+[![Image from Gyazo](https://i.gyazo.com/bebc8e570878c8a830ff8f82615d40e9.png)](https://gyazo.com/bebc8e570878c8a830ff8f82615d40e9)
 ### 🔻Postsテーブル
-
+- body
 
 ### 🔻Usersテーブル
+- email
+- crypted_password
+- salt
