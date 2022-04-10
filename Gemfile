@@ -62,3 +62,5 @@ gem 'net-imap'
 gem 'net-pop'
 # ログイン用
 gem 'sorcery'
+# 国際化
+gem 'rails-i18n'
