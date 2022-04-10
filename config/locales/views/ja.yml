@@ -1,0 +1,13 @@
+ja:
+  defaults:
+    login: "ログイン"
+    logout: "ログアウト"
+  user_sessions:
+    new:
+      title: "ログイン"
+    create:
+      success: "ログイン成功"
+      failure: "ログイン失敗"
+    destroy:
+      success: "ログアウト成功"
+
