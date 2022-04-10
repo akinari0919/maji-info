@@ -62,4 +62,3 @@ gem 'net-imap'
 gem 'net-pop'
 
 gem 'rails-i18n'
-
