@@ -65,5 +65,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'net-smtp'
 gem 'net-imap'
 gem 'net-pop'
-
+# ログイン用
+gem 'sorcery'
+# 国際化
 gem 'rails-i18n'
