@@ -66,4 +66,5 @@ RSpec.configure do |config|
 
   config.include FactoryBot::Syntax::Methods # 追記
   config.include Capybara::DSL # 追記
+  config.include LoginMacros # 追記
 end
