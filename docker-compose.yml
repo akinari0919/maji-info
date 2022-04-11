@@ -17,3 +17,10 @@ services:
       - .:/maji-info
     depends_on:
       - db
+      - chrome
+
+  #Chromeでのテスト実行用コンテナ
+  chrome:
+    image: selenium/standalone-chrome-debug:latest
+    ports:
+      - 4444:4444
