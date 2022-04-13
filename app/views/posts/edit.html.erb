@@ -1,0 +1,6 @@
+<h1><%= t(".title") %></h1>
+
+<%= render "form", post: @post %>
+
+<%= link_to t("defaults.show"), @post %> |
+<%= link_to t("defaults.back"), posts_path %>

@@ -1,0 +1,12 @@
+<p>
+  <strong><%= Post.human_attribute_name(:id) %>:</strong>
+  <%= @post.id %>
+</p>
+
+<p>
+  <strong><%= Post.human_attribute_name(:body) %>:</strong>
+  <%= @post.body %>
+</p>
+
+<%= link_to t("defaults.edit"), edit_post_path(@post) %> |
+<%= link_to t("defaults.back"), posts_path %>

@@ -2,6 +2,18 @@ ja:
   defaults:
     login: "ログイン"
     logout: "ログアウト"
+    show: "詳細"
+    edit: "編集"
+    destroy: "削除"
+    create: "作成"
+    back: "戻る"
+    message:
+      created: "%{item}を作成しました"
+      not_created: "%{item}を作成できませんでした"
+      updated: "%{item}を更新しました"
+      not_updated: "%{item}を更新できませんでした"
+      deleted: "%{item}を削除しました"
+      delete_confirm: "削除しますか？"
   user_sessions:
     new:
       title: "ログイン"
@@ -10,4 +22,11 @@ ja:
       failure: "ログイン失敗"
     destroy:
       success: "ログアウト成功"
+  posts:
+    new:
+      title: "新規投稿"
+    index:
+      title: "投稿一覧"
+    edit:
+      title: "投稿編集"
 
