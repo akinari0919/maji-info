@@ -17,25 +17,25 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to posts_path, notice: '投稿を作成しました'
+      redirect_to posts_path, notice: t('defaults.message.created',item: Post.model_name.human)
     else
-      flash.now[:alert] = '投稿の作成に失敗しました'
+      flash.now[:alert] =  t('defaults.message.not_created',item: Post.model_name.human)
       render :new
     end
   end
 
   def update
     if @post.update(post_params)
-      redirect_to post_path(@post), notice: '投稿を更新しました'
+      redirect_to post_path(@post), notice: t('defaults.message.updated',item: Post.model_name.human)
     else
-      flash.now[:alert] = '投稿の更新に失敗しました'
+      flash.now[:alert] = t('defaults.message.not_updated',item: Post.model_name.human)
       render :edit
     end
   end
 
   def destroy
     @post.destroy!
-    redirect_to posts_path, notice: '投稿を削除しました'
+    redirect_to posts_path, notice: t('defaults.message.deleted',item: Post.model_name.human)
   end
 
   private
