@@ -38,6 +38,8 @@ group :development, :test do
   # RSpecなど
   gem 'factory_bot_rails'
   gem 'rspec-rails'
+  # 環境変数
+  gem 'dotenv-rails'
 end
 
 group :development do
