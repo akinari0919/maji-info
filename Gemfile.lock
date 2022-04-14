@@ -84,6 +84,10 @@ GEM
     crass (1.0.6)
     diff-lcs (1.5.0)
     digest (3.1.0)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.10.0)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
@@ -135,6 +139,8 @@ GEM
       timeout
     nio4r (2.5.8)
     nokogiri (1.13.3-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
     oauth (0.5.8)
     oauth2 (1.4.9)
@@ -276,11 +282,13 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  x86_64-linux
 
 DEPENDENCIES
   awesome_print
   bootsnap (>= 1.4.4)
   capybara
+  dotenv-rails
   factory_bot_rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
