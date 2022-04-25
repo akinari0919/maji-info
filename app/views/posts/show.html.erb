@@ -2,10 +2,21 @@
   <strong><%= Post.human_attribute_name(:id) %>:</strong>
   <%= @post.id %>
 </p>
-
+<p>
+  <strong><%= Post.human_attribute_name(:title) %>:</strong>
+  <%= @post.title %>
+</p>
 <p>
   <strong><%= Post.human_attribute_name(:body) %>:</strong>
   <%= @post.body %>
+</p>
+<p>
+  <strong><%= Post.human_attribute_name(:url) %>:</strong>
+  <%= @post.url %>
+</p>
+<p>
+  <strong><%= Post.human_attribute_name(:contributor) %>:</strong>
+  <%= @post.contributor %>
 </p>
 
 <%= link_to t("defaults.edit"), edit_post_path(@post) %> |

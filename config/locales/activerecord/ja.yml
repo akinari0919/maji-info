@@ -8,5 +8,8 @@ ja:
         email: "メールアドレス"
         password: "パスワード"
       post:
+        title: "タイトル"
         body: "本文"
+        url: "MattermostURL"
+        contributor: "投稿者"
 
