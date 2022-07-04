@@ -8,10 +8,18 @@ namespace :task_mattermost do
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = uri.scheme === "https"
 
-    params = { text: Post.random.body }
-    headers = { "Content-Type" => "application/json" }
-    response = http.post(uri.path, params.to_json, headers)
-    puts response.code # status code
-    puts response.body
+    begin
+      post = Post.random_from_unposted
+      params = { text: post.body }
+      headers = { "Content-Type" => "application/json" }
+      response = http.post(uri.path, params.to_json, headers)
+      post.submitted!
+      Post.update_all(submitted: false) if Post.unsubmitted.empty?
+      puts response.code # status code
+      puts response.body
+    rescue => e
+      Post.update_all(submitted: false)
+      puts "#{e}:エラーが発生した為、全てのpostレコードに対して未投稿状態に変更しています。"
+    end
   end
 end
