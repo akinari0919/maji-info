@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  validates :body, presence: true
+  validates :body, presence: true, uniqueness: true
 
   scope :random_from_unposted, -> { where(submitted: false).order("RANDOM()").first }
   scope :unsubmitted, -> { where(submitted: false) }
